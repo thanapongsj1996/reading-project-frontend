@@ -1,16 +1,11 @@
 import React from 'react'
 
 // Components
-import { Header, Footer } from '../components/Organisms'
+import { HomeTemplate } from '../components/Templates'
 
 const Home = () => {
 
-    return (
-        <div>
-            <Header />
-            <Footer />
-        </div>
-    )
+    return <HomeTemplate />
 
 }
 
