@@ -17,7 +17,7 @@ const Header = () => {
 
     const headerIcon = [
         { img: bookImg, to: '/login' },
-        { img: writeImg, to: '/my-book/0123?title=this%20is%20title' },
+        { img: writeImg, to: '/articles/0123?title=this%20is%20title' },
         { img: contactImg, to: '/login' },
         { img: userImg, to: '/login' }
     ]
@@ -33,8 +33,8 @@ const Header = () => {
 
     return (
         <Header>
-            <div class="container-fluid">
-                <div class="w-100 d-flex justify-content-around">
+            <div class="container">
+                <div class="w-100 d-flex justify-content-between">
                     {headerIcon.map((icon) => { return <HeaderIcon to={icon.to} src={icon.img} /> })}
                 </div>
             </div>

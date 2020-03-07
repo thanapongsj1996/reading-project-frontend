@@ -6,6 +6,7 @@ const color = {
     },
     bg: {
         green: '#61F168',
+        light_green: '#A5FAA5',
         black: '#141714'
     },
     icon: {

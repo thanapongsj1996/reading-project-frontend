@@ -14,7 +14,7 @@ const renderRouter = () => {
       <Route exact path="/" component={Home} />
       <Route path="/login/:uid" component={Login} />
       <Route path="/login" component={Login} />
-      <Route path="/my-book/:uid" component={MyBook} />
+      <Route path="/articles/:uid" component={MyBook} />
       <Route component={NotFound} />
     </Switch>
   )

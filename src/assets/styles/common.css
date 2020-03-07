@@ -1,3 +1,8 @@
+body {
+  font-family: "Prompt", sans-serif;
+  background: #f2faf2;
+}
+
 .header-banner {
   width: 120px;
   height: 31px;
