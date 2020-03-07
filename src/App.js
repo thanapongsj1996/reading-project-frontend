@@ -5,6 +5,7 @@ import './App.css'
 
 import Home from './pages/Home'
 import Login from './pages/Login'
+import MyBook from './pages/MyBook'
 import NotFound from './pages/NotFound'
 
 const renderRouter = () => {
@@ -13,6 +14,7 @@ const renderRouter = () => {
       <Route exact path="/" component={Home} />
       <Route path="/login/:uid" component={Login} />
       <Route path="/login" component={Login} />
+      <Route path="/my-book/:uid" component={MyBook} />
       <Route component={NotFound} />
     </Switch>
   )

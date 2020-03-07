@@ -17,7 +17,7 @@ const Header = () => {
 
     const headerIcon = [
         { img: bookImg, to: '/login' },
-        { img: writeImg, to: '/login' },
+        { img: writeImg, to: '/my-book/0123?title=this%20is%20title' },
         { img: contactImg, to: '/login' },
         { img: userImg, to: '/login' }
     ]
