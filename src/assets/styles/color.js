@@ -2,7 +2,8 @@ const color = {
     text: {
         black: '#282727',
         green: '#2EAB34',
-        white: '#E8F6E8'
+        white: '#E8F6E8',
+        light_gray: '#909497'
     },
     bg: {
         green: '#61F168',

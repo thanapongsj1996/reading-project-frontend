@@ -1,11 +1,15 @@
 import React from 'react'
 
+// Styles
 import styled from 'styled-components';
 import color from '../../assets/styles/color'
 
+// Components
 import { CheckBox } from '../Atoms/Selector'
 
-const Filter = () => {
+const Filter = (props) => {
+
+    const { title, choices } = props.filter
 
     const onCheck = (data) => {
         alert(data)
@@ -18,6 +22,7 @@ const Filter = () => {
         padding: 8px;
         padding-left: 20px;
         border-radius: 10px;
+        text-transform: uppercase;
     `
     const Icon = styled.img`
         width: 20px;
@@ -29,12 +34,12 @@ const Filter = () => {
     return (
         <div>
             <Title>
-                <Icon src={require('../../assets/images/cate.png')} /> BOOK CATEGORIES
+                <Icon src={require('../../assets/images/cate.png')} /> {title}
             </Title>
             <form class="px-4 py-3">
-                <CheckBox onCheck={() => { onCheck('1') }} value="1" label="test" />
-                <CheckBox onCheck={() => { onCheck('2') }} value="2" label="test2" />
-                <CheckBox onCheck={() => { onCheck('3') }} value="3" label="test3" />
+                {choices.map((choice) => {
+                    return <CheckBox onCheck={() => { onCheck(choice.value) }} value={choice.value} label={choice.label} />
+                })}
             </form>
         </div>
     )

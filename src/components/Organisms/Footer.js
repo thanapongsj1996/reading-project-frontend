@@ -18,10 +18,9 @@ const Footer = () => {
         text-align: center;
     `
 
-
     return (
         <Footer>
-            © 2020 Reading project - Made with ❤️ by Thanapong Somjai
+            © 2020 Reading project - Made with <span role="img" aria-label="heart">❤️</span> by Thanapong Somjai
         </Footer>
     )
 
