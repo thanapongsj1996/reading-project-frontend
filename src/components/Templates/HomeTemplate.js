@@ -4,7 +4,7 @@ import React from "react";
 import styled from 'styled-components';
 
 import { Header, Footer, ReviewCard } from '../Organisms'
-import { Filter } from '../Moleclues'
+import { Filter } from '../Molecules'
 
 import filters from '../../assets/static_data/articleFilters'
 

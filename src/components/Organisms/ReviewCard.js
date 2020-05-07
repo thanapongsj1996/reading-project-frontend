@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import color from '../../assets/styles/color'
 
 // Components
-import Profile from '../Moleclues/Profile'
+import Profile from '../Molecules/Profile'
 
 const ReviewCard = () => {
 
@@ -62,7 +62,7 @@ const ReviewCard = () => {
                     </div>
 
                     <div class="mt-2">
-                        <Button>Read more</Button>
+                        <Button onClick={() => alert('clicked!')}>Read more</Button>
                     </div>
 
                 </div>
