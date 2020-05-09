@@ -14,3 +14,9 @@ body {
 .site-layout-background {
   background: #fff;
 }
+
+.formLabel {
+  color: #282727;
+  font-size: 18px;
+  margin-top: 10px;
+}
